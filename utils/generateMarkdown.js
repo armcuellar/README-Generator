@@ -22,17 +22,11 @@ function generateMarkdown(data) {
 * [Credits](#credits)
 * [License](#license)
 
-
 ## Installation
-
-
 
 ## Usage
 
-
-
 ## Credits
-
 
 
 ## License
