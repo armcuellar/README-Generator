@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
 const Choices = require('inquirer/lib/objects/choices');
+const validateEmail = require('validate_email')
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -11,7 +12,16 @@ const questions = () => {
         {
             type: 'input',
             name: 'title',
-            message: 'What is the title of the project?'
+            message: 'What is the title of the project?',
+            validate: titleInput => {
+                if (titleInput) {
+                    return true;
+                }
+                else {
+                    console.log("Please enter your project's Title!");
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
@@ -21,22 +31,22 @@ const questions = () => {
         {
             type: 'input',
             name: 'installation',
-            message: 'Add installation instructions:'
+            message: 'What are the steps to install your project?'
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'Add usage of the project:'
+            message: 'Provide instructions for usage:'
         },
         {
             type: 'input',
             name: 'contributing',
-            message: 'Add a contribution guideline of the project:'
+            message: 'What are the contributing guidelines?'
         },
         {
             type: 'input',
             name: 'tests',
-            message: 'Add how to test project:'
+            message: 'How to run test for your project?'
         },
         {
             type: 'list',
@@ -52,7 +62,8 @@ const questions = () => {
         {
             type: 'input',
             name: 'email',
-            message: 'Enter your ename:'
+            message: 'Enter your email: (only valid email is accepted)',
+            validate: validateEmail
         },
     ])
 }
@@ -75,8 +86,8 @@ function init() {
             return generateMarkdown(data)
         })
         .then(markupData => {
-            writeToFile('readme.md', markupData);
-
+            writeToFile('output/readme.md', markupData);
+            console.log("readme successfuly created on output folder!")
         });
 
 }

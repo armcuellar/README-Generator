@@ -72,7 +72,7 @@ ${data.installation}
 ## Usage
 ${data.usage}
 ## License
-${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)} 
 ${renderLicenseLink(data.license)}
 ## Contributing
 ${data.contributing}
@@ -80,7 +80,7 @@ ${data.contributing}
 ${data.tests}
 ## Questions
 Any questions reachout at ${data.email}
-or visis my GitHub [${data.gitHubUsername}](https://github.com/${data.gitHubUsername})
+or visit my GitHub [${data.gitHubUsername}](https://github.com/${data.gitHubUsername})
 `;
 }
 
