@@ -20,7 +20,7 @@ run NPM i
 and then node index
 
 ## Usage
-When a city is entered the dashboard, it will generate the current and future forcast of that city. A recent search history is also included to quickly revist searched cities' forecast.
+When the questions are answered thorugh the aplication a readme file will be generated.
 
 [Video link of how to use README GENERATOR](https://watch.screencastify.com/v/pbb1u3xIATkntgEyinyu)
 
