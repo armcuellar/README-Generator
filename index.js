@@ -12,7 +12,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'title',
-            message: 'What is the title of the project?',
+            message: 'What is the title of the project? (Required)',
             validate: titleInput => {
                 if (titleInput) {
                     return true;

@@ -21,7 +21,7 @@ URL of deployed application: https://armcuellar.github.io/weather-dashboard/
 ## Usage
 When a city is entered the dashboard, it will generate the current and future forcast of that city. A recent search history is also included to quickly revist searched cities' forecast.
 
-![Video link of how to use README GENERATOR](assets/images/dashboard_screenshot.png)
+[Video link of how to use README GENERATOR](https://watch.screencastify.com/v/pbb1u3xIATkntgEyinyu)
 
 
 ## Credits
