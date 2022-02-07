@@ -15,12 +15,12 @@ The purpose of this application is to automatically generate a README through an
 
 To run the application you must 
 
-run NPM i
+`run NPM i`
 
-and then node index
+and then `node index`
 
 ## Usage
-When the questions are answered thorugh the aplication a readme file will be generated.
+When the questions are answered through the application a readme file will be generated.
 
 [Video link of how to use README GENERATOR](https://watch.screencastify.com/v/pbb1u3xIATkntgEyinyu)
 
