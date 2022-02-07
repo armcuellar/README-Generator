@@ -13,10 +13,11 @@ The purpose of this application is to automatically generate a README through an
 
 ## Installation
 
-To run the application you must run NPM i
-and then node index
+To run the application you must 
 
-URL of deployed application: https://armcuellar.github.io/weather-dashboard/
+run NPM i
+
+and then node index
 
 ## Usage
 When a city is entered the dashboard, it will generate the current and future forcast of that city. A recent search history is also included to quickly revist searched cities' forecast.
